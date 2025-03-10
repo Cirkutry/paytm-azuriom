@@ -9,29 +9,21 @@ class PaytmServiceProvider extends BasePluginServiceProvider
 {
     /**
      * Register any plugin services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
 
     /**
      * Bootstrap any plugin services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        if (! plugins()->isEnabled('shop')) {
-            logger()->warning('Paytm requires the Shop plugin to work!');
-            return;
-        }
-
         $this->loadViews();
+		
         $this->loadTranslations();
-        
+
         payment_manager()->registerPaymentMethod('paytm', PaytmMethod::class);
     }
 }
