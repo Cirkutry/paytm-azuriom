@@ -1,0 +1,17 @@
+{
+    "id": "paytm",
+    "name": "Paytm UPI",
+    "description": "Paytm UPI Payment Gateway for Azuriom Shop",
+    "version": "1.0.0",
+    "url": "https://github.com/Cirkutry/azuriom-paytm",
+    "authors": [
+        "Kre0lidge"
+    ],
+    "providers": [
+        "\\Azuriom\\Plugin\\Paytm\\Providers\\PaytmServiceProvider"
+    ],
+    "azuriom_api": "1.0.0",
+    "dependencies": {
+        "shop": "^1.0.0"
+    }
+}

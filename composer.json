@@ -1,0 +1,11 @@
+{
+    "name": "azuriom/paytm",
+    "type": "azuriom-plugin",
+    "description": "Paytm UPI Payment Gateway for Azuriom Shop",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Azuriom\\Plugin\\Paytm\\": "src/"
+        }
+    }
+}
